@@ -1,0 +1,24 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: monthly
+  open-pull-requests-limit: 10
+  versioning-strategy: increase
+  ignore:
+  - dependency-name: less
+    versions:
+    - 3.13.1
+  - dependency-name: webpack
+    versions:
+    - 3.12.0
+  - dependency-name: webpack-dev-server
+    versions:
+    - 2.11.5
+  - dependency-name: css-loader
+    versions:
+    - 0.28.11
+  - dependency-name: babel-loader
+    versions:
+    - 7.1.5
